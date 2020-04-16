@@ -195,14 +195,13 @@ def player_stats (player_name)
     end
   end
 end
-=begin* Build a method, `big_shoe_rebounds`, that will return the number of rebounds
-  associated with the player that has the largest shoe size. Break this one down
-  into steps:
+#* Build a method, `big_shoe_rebounds`, that will return the number of rebounds
+  #associated with the player that has the largest shoe size. Break this one down
+  #into steps:
 
-  * First, find the player with the largest shoe size
-  * Then, return that player's number of rebounds
-  * Remember to think about return values here.
-=end
+#  * First, find the player with the largest shoe size
+  #* Then, return that player's number of rebounds
+  #* Remember to think about return values here.
 def big_shoe_rebounds
   shoe = 0
   rebounds = 0
