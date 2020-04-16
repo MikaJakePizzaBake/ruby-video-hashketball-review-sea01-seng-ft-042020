@@ -186,3 +186,4 @@ def player_stats (player_name)
   if players = game_hash[:home][:players] || game_hash[:away][:players]
     return players[player_name]
 end
+end
