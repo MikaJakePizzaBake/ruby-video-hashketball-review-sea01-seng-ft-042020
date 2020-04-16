@@ -183,8 +183,6 @@ end
 #* Build a method, `player_stats`, that takes in an argument of a player's name
 #  and returns a hash of that player's stats.
 def player_stats (player_name)
-  binding.pry
-  players = game_hash[:home][:players].merge(game_hash[:away][:players])
-  binding.pry
-  players[player_name]
+  if players = game_hash[:home][:players] || game_hash[:away][:players]
+    return players[player_name]
 end
