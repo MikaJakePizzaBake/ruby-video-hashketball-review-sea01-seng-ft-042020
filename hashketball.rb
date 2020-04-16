@@ -185,7 +185,7 @@ end
 def player_stats (player_name)
   game_hash.each do |location, data|
     data.each do |players, stats|
-      if key == :players
+      if players == :players
         stats.each do |players|
           if players[:player_name] == player_name
             return players
