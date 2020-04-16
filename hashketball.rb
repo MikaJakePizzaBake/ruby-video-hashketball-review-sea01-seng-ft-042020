@@ -183,8 +183,20 @@ end
 #* Build a method, `player_stats`, that takes in an argument of a player's name
 #  and returns a hash of that player's stats.
 def player_stats (player_name)
-  binding.pry
-  if players = game_hash[:home][:players] || game_hash[:away][:players]
-    return players[player_name]
+  game_hash.each do |location, data|
+    data.each do |players, stats|
+      if key == :players
+        stats.each do |players|
+          if players[:player_name] == player_name
+            return players
+          end
+        end
+      end
+    end
+  end
 end
-end
+
+
+  
+    
+     
