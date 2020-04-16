@@ -209,9 +209,10 @@ def big_shoe_rebounds
   game_hash.each do |location, data|
     data[:players].each do |player|
       if player[:shoe] > shoe
-        shoe == player[:shoe]
+        shoe = player[:shoe]
+        rebounds = player[:rebounds] 
       end
-      return player[:rebounds]
     end
   end
+    return player[:rebounds]
 end
